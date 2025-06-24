@@ -27,15 +27,8 @@ The Disaster Response Information System (DRIS) is a centralized web-based platf
 - **Volunteers**: Register availability and assist in emergencies
 - **Authorities**: Monitor, manage, and coordinate disaster response
 
-### Key Features
-- Real-time disaster reporting with GPS location support
-- Aid request management system
-- Volunteer skill registration and assignment
-- Emergency shelter directory with availability tracking
-- Role-based access control with secure authentication
-- Responsive UI design using Semantic UI CSS
 
-## Data Model Design
+## Q1 Data Model Design
 
 ### Entity Relationship Overview
 
@@ -238,7 +231,7 @@ The DRIS follows the Model-View-Template (MVT) architecture pattern:
 3. **Security First**: CSRF protection, role-based views
 4. **Scalable Structure**: Easy to add new disaster types or user roles
 
-## User Interface Design
+## Q2 User Interface Design
 
 ### Design Principles
 - **Responsive Design**: Mobile-friendly using Semantic UI
@@ -284,6 +277,42 @@ The base template (`base.html`) includes:
    - Pending requests management
    - Visual volunteer cards with skill tags
    - Assignment history tracking
+
+UI Flow
+```mermain
+flowchart TB
+    subgraph "Landing Page UI"
+        L1[Emergency Hotline Banner]
+        L2[Navigation Menu]
+        L3[Hero Section]
+        L4[Recent Disasters]
+        L5[Available Shelters]
+        L6[Call to Action]
+    end
+    
+    subgraph "Disaster Report UI"
+        D1[Filter Form]
+        D2[Report List]
+        D3[Report Card]
+        D4[Status Labels]
+        D5[Create Report Button]
+    end
+    
+    subgraph "Aid Request UI"
+        A1[Request Form]
+        A2[Request Table]
+        A3[Status Tracking]
+        A4[Assignment Info]
+    end
+    
+    L3 --> D1
+    L3 --> A1
+    
+    style L1 fill:#f66,stroke:#333,stroke-width:2px
+    style D1 fill:#6cf,stroke:#333,stroke-width:2px
+    style A1 fill:#fc6,stroke:#333,stroke-width:2px
+```
+
 
 ## Navigation Flow
 
