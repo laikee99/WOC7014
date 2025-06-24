@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/c425f7ca-52c5-4b7c-8879-76bcf1cac25b)# DRIS (Disaster Response Information System) Project Documentation
+# DRIS (Disaster Response Information System) Project Documentation
 
 **Student Name:** DU WENTAO  
 **Student ID:** 24084310  
@@ -250,12 +250,15 @@ The base template (`base.html`) includes:
 ### Key UI Components
 
 1. **Home Page** (`home.html`)
+   ![127 0 0 1_8000_ (2)](https://github.com/user-attachments/assets/7c926799-03f4-43de-911b-636018a5fe71)
+
+  ![image](https://github.com/user-attachments/assets/cb65535f-dbb1-483c-9709-d115163999bb)
+
    - Hero section with three action cards
    - Recent verified disaster reports
    - Available emergency shelters
    - Call-to-action for different user types
   
-    ![image](https://github.com/user-attachments/assets/cb65535f-dbb1-483c-9709-d115163999bb)
 
 
 2. **Disaster Reports** (`disaster_reports.html`)
