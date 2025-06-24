@@ -120,6 +120,95 @@ The DRIS data model consists of six main entities with carefully designed relati
   - Many-to-One with AidRequest
   - Many-to-One with User (assigned_by)
 
+### ER Diagram
+```mermaid
+
+erDiagram
+    USER ||--o| USER_PROFILE : has
+    USER ||--o{ DISASTER_REPORT : reports
+    USER ||--o{ AID_REQUEST : requests
+    USER ||--o{ VOLUNTEER_ASSIGNMENT : "assigned as volunteer"
+    USER ||--o{ VOLUNTEER_ASSIGNMENT : "assigned by"
+    
+    AID_REQUEST ||--o{ VOLUNTEER_ASSIGNMENT : "has assignments"
+    AID_REQUEST }o--o| SHELTER : "assigned to"
+    
+    USER {
+        int id PK
+        string username
+        string email
+        string first_name
+        string last_name
+        string password
+        datetime date_joined
+    }
+    
+    USER_PROFILE {
+        int id PK
+        int user_id FK
+        string role
+        text skills
+        boolean availability
+        datetime created_at
+        datetime updated_at
+    }
+    
+    DISASTER_REPORT {
+        int id PK
+        int reporter_id FK
+        string disaster_type
+        string severity
+        string location
+        string gps_coordinates
+        text description
+        datetime timestamp
+        boolean is_verified
+        datetime created_at
+        datetime updated_at
+    }
+    
+    SHELTER {
+        int id PK
+        string name
+        string location
+        int capacity
+        int current_occupancy
+        int available_spaces
+        text facilities
+        string contact_person
+        string contact_number
+        boolean is_active
+        datetime created_at
+        datetime updated_at
+    }
+    
+    AID_REQUEST {
+        int id PK
+        int requester_id FK
+        string request_type
+        text description
+        string location
+        string urgency_level
+        int number_of_people
+        string status
+        int assigned_shelter_id FK
+        datetime created_at
+        datetime updated_at
+    }
+    
+    VOLUNTEER_ASSIGNMENT {
+        int id PK
+        int volunteer_id FK
+        int aid_request_id FK
+        int assigned_by_id FK
+        text task_description
+        string status
+        datetime assigned_at
+        datetime completed_at
+    }
+```
+
+
 ## System Architecture
 
 The DRIS follows the Model-View-Template (MVT) architecture pattern:
