@@ -292,16 +292,13 @@ The base template (`base.html`) includes:
 
    **Volunteer View**
    Can see aids assigned to this volunteer.
-   
-   ![image](https://github.com/user-attachments/assets/a30594a1-c76b-4179-9e5b-d2413a43a92e)
-
-
 
    ![127 0 0 1_8000_aid-requests_9_](https://github.com/user-attachments/assets/22156b78-0b95-46a4-9ab8-fd00c063e016)
 
    **Normal User**
    Can see and edit aids under this user account, can create new one.
 
+   ![image](https://github.com/user-attachments/assets/a30594a1-c76b-4179-9e5b-d2413a43a92e)
    
    ![image](https://github.com/user-attachments/assets/8bec9c0d-d63b-44a9-a426-013194717319)
    
@@ -733,4 +730,11 @@ The application follows Django's modular design principles:
 
 ---
 
-**Note:** This system is designed for educational purposes demonstrating Django web framework capabilities. Production deployment would require additional security hardening, performance optimization, and compliance with data protection regulations. 
+**Note:** 
+
+admin/admin
+user/RnEqeCgb7d6x295
+volunteer/4B-2Qr7amx-MPsv
+manager/qdXEsU9N?FDMp2i
+
+Dashboard: /admin
