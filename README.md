@@ -609,6 +609,19 @@ graph LR
    - Permission checking in views
    - Secure form handling
    - Input validation
+  
+5. **Role Based Control**
+   
+   - Frontend Role
+     
+     <img width="1503" alt="image" src="https://github.com/user-attachments/assets/8efb3908-5c9e-4acf-ab18-17f88da6658a" />
+     <img width="758" alt="image" src="https://github.com/user-attachments/assets/c26423a9-64c8-4e8a-94bf-09506bf56cd4" />
+
+   - Group Role
+     
+     <img width="765" alt="image" src="https://github.com/user-attachments/assets/f083b4f6-c545-4e99-9429-0875aff470e1" />
+     <img width="1497" alt="image" src="https://github.com/user-attachments/assets/4c5e999f-c141-4de1-9e7f-9b108d4e877b" />
+
 
 ## Installation Guide
 
