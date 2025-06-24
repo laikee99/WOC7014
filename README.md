@@ -250,9 +250,18 @@ The base template (`base.html`) includes:
 ### Key UI Components
 
 1. **Home Page** (`home.html`)
-   ![127 0 0 1_8000_ (2)](https://github.com/user-attachments/assets/7c926799-03f4-43de-911b-636018a5fe71)
+   User Page
+   
+   ![127 0 0 1_8000_ (3)](https://github.com/user-attachments/assets/496ae686-de53-48a3-9a4c-6754b6069c10)
 
-  ![image](https://github.com/user-attachments/assets/cb65535f-dbb1-483c-9709-d115163999bb)
+   Volunteer Page
+   
+   ![127 0 0 1_8000_ (4)](https://github.com/user-attachments/assets/78e98f9d-0adf-419a-bb75-876dd4068b21)
+
+   Manager Page
+   
+   ![127 0 0 1_8000_ (5)](https://github.com/user-attachments/assets/1b91bd90-7ed1-40e6-84b6-cd2d237b0a89)
+
 
    - Hero section with three action cards
    - Recent verified disaster reports
@@ -261,10 +270,11 @@ The base template (`base.html`) includes:
   
 
 
-2. **Disaster Reports** (`disaster_reports.html`)
+1. **Disaster Reports** (`disaster_reports.html`)
    - Advanced filter form with multiple criteria
   
   ![image](https://github.com/user-attachments/assets/1d717f27-dae3-4b5b-b5f2-bc62144e3728)
+  
   ![image](https://github.com/user-attachments/assets/9813e182-1969-4ba9-b4b4-75c0f3204fdf)
   
 
@@ -283,7 +293,7 @@ The base template (`base.html`) includes:
    - Card-based layout for visual appeal
    - Real-time availability display
    
-   ![127 0 0 1_8000_shelters_](https://github.com/user-attachments/assets/54779b6b-51c6-47bd-8f02-98943c5f5d5a)
+   ![127 0 0 1_8000_shelters_ (1)](https://github.com/user-attachments/assets/c86dda41-1556-4807-9f3e-8b506b4fbfbb)
   
 
    - Quick contact and directions buttons
@@ -293,7 +303,8 @@ The base template (`base.html`) includes:
    **Volunteer View**
    Can see aids assigned to this volunteer.
 
-   ![127 0 0 1_8000_aid-requests_9_](https://github.com/user-attachments/assets/22156b78-0b95-46a4-9ab8-fd00c063e016)
+   ![127 0 0 1_8000_aid-requests_9_ (1)](https://github.com/user-attachments/assets/9e1ceb4d-95c9-48e2-bf81-1e63a2b5fbc3)
+
 
    **Normal User**
    Can see and edit aids under this user account, can create new one.
@@ -332,10 +343,13 @@ The base template (`base.html`) includes:
 
 
    Volunteer manage assignments
-   ![image](https://github.com/user-attachments/assets/8afc7fa2-acf1-4a21-8d66-b7173be21825)
+   
+   ![127 0 0 1_8000_volunteer-assignments_](https://github.com/user-attachments/assets/7847fad8-83a9-4d8e-8e01-bd01b60b525d)
+
 
     
    Volunteer/Manager view aid details
+   
    ![image](https://github.com/user-attachments/assets/a7dbe55e-7ce7-488e-a9a2-fdac482a4fb1)
 
 
