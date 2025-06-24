@@ -295,17 +295,20 @@ The base template (`base.html`) includes:
    
    ![image](https://github.com/user-attachments/assets/a30594a1-c76b-4179-9e5b-d2413a43a92e)
 
-   ![image](https://github.com/user-attachments/assets/8bec9c0d-d63b-44a9-a426-013194717319)
 
-   ![image](https://github.com/user-attachments/assets/3145011b-e07c-4771-85d1-0bc82720652f)
 
    ![127 0 0 1_8000_aid-requests_9_](https://github.com/user-attachments/assets/22156b78-0b95-46a4-9ab8-fd00c063e016)
 
    **Normal User**
-   Can see aids under this user account.
+   Can see and edit aids under this user account, can create new one.
+
+   
+   ![image](https://github.com/user-attachments/assets/8bec9c0d-d63b-44a9-a426-013194717319)
    
    ![image](https://github.com/user-attachments/assets/cc7edbb6-e131-4dbc-9b59-b6db1e9e55a3)
 
+
+   ![image](https://github.com/user-attachments/assets/3145011b-e07c-4771-85d1-0bc82720652f)
   
    - Role-based view filtering
    - Table layout for efficient data display
