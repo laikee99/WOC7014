@@ -1,4 +1,4 @@
-# DRIS (Disaster Response Information System) Project Documentation
+![image](https://github.com/user-attachments/assets/c425f7ca-52c5-4b7c-8879-76bcf1cac25b)# DRIS (Disaster Response Information System) Project Documentation
 
 **Student Name:** DU WENTAO  
 **Student ID:** 24084310  
@@ -26,6 +26,7 @@ The Disaster Response Information System (DRIS) is a centralized web-based platf
 - **Citizens**: Report disasters and request aid
 - **Volunteers**: Register availability and assist in emergencies
 - **Authorities**: Monitor, manage, and coordinate disaster response
+- **Admin**: Verify informations
 
 
 ## Q1 Data Model Design
@@ -253,26 +254,71 @@ The base template (`base.html`) includes:
    - Recent verified disaster reports
    - Available emergency shelters
    - Call-to-action for different user types
+  
+    ![image](https://github.com/user-attachments/assets/cb65535f-dbb1-483c-9709-d115163999bb)
+
 
 2. **Disaster Reports** (`disaster_reports.html`)
    - Advanced filter form with multiple criteria
+  
+  ![image](https://github.com/user-attachments/assets/1d717f27-dae3-4b5b-b5f2-bc62144e3728)
+  ![image](https://github.com/user-attachments/assets/9813e182-1969-4ba9-b4b4-75c0f3204fdf)
+  
+  ![image](https://github.com/user-attachments/assets/0e5abf58-0484-4fa2-9443-8f843cd08286)
+
    - Icon-based disaster type visualization
    - Color-coded severity labels
    - Verification status indicators
 
-3. **Shelters** (`shelters.html`)
+2. **Shelters** (`shelters.html`)
+
+   ![image](https://github.com/user-attachments/assets/fe5686c8-7e38-4ee9-871f-9703844f3155)
+
    - Search functionality by location
+   
+   ![image](https://github.com/user-attachments/assets/dad11fb5-d6bb-4d2c-b4e4-a5a44339f1bc)
+
    - Card-based layout for visual appeal
    - Real-time availability display
+   
+   ![image](https://github.com/user-attachments/assets/bb50f7fd-807e-4192-a715-48c20ed1a209)
+
    - Quick contact and directions buttons
 
 4. **Aid Requests** (`aid_requests.html`)
+
+   ![image](https://github.com/user-attachments/assets/a30594a1-c76b-4179-9e5b-d2413a43a92e)
+
+   ![image](https://github.com/user-attachments/assets/8bec9c0d-d63b-44a9-a426-013194717319)
+
+   ![image](https://github.com/user-attachments/assets/3145011b-e07c-4771-85d1-0bc82720652f)
+
+
    - Role-based view filtering
    - Table layout for efficient data display
    - Status tracking with color codes
    - Integrated volunteer assignment info
 
-5. **Volunteer Dashboard** (`volunteer_dashboard.html`)
+6. **Volunteer Dashboard** (`volunteer_dashboard.html`)
+
+
+   ![image](https://github.com/user-attachments/assets/10438ae2-6cab-4a5e-83d3-fcb3bea4dadf)
+
+   ![image](https://github.com/user-attachments/assets/6cd4c641-7ed0-44bc-876f-71072f7480f4)
+
+   ![image](https://github.com/user-attachments/assets/e93c1006-42d4-4a6c-a952-e75ab79310b6)
+
+   ![image](https://github.com/user-attachments/assets/f53ad75c-9b20-452e-bd4a-984e95870cda)
+
+   ![image](https://github.com/user-attachments/assets/bb879e2d-aa1e-43d4-8fde-bf7f1842c03a)
+
+   ![image](https://github.com/user-attachments/assets/6252719a-2bd5-4f0e-a63f-d9d559051aa3)
+
+
+   ![image](https://github.com/user-attachments/assets/2e232dad-43a5-4587-b8c4-1168a82636f6)
+
+    
+
    - Statistics overview cards
    - Pending requests management
    - Visual volunteer cards with skill tags
@@ -314,7 +360,7 @@ flowchart TB
 ```
 
 
-## Navigation Flow
+## Q3 Navigation Flow
 
 ### 1. General User Flow
 ```
