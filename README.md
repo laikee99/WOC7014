@@ -317,7 +317,14 @@ The base template (`base.html`) includes:
 
    ![image](https://github.com/user-attachments/assets/2e232dad-43a5-4587-b8c4-1168a82636f6)
 
+
+   Volunteer manage assignments
+   ![image](https://github.com/user-attachments/assets/8afc7fa2-acf1-4a21-8d66-b7173be21825)
+
     
+   Volunteer/Manager view aid details
+   ![image](https://github.com/user-attachments/assets/a7dbe55e-7ce7-488e-a9a2-fdac482a4fb1)
+
 
    - Statistics overview cards
    - Pending requests management
