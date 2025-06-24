@@ -205,7 +205,7 @@ erDiagram
 
 ## System Architecture
 
-The DRIS follows the Model-View-Template (MVT) architecture pattern:
+The DRIS follows the Model-View-Controller (MVC) architecture pattern:
 
 ### Models
 - Define data structure and business logic
@@ -213,14 +213,14 @@ The DRIS follows the Model-View-Template (MVT) architecture pattern:
 - Implement data validation
 - Auto-calculate fields (e.g., shelter availability)
 
-### Views
+### Controllers
 - Process HTTP requests
 - Implement business logic
 - Handle form processing
 - Manage user authentication and authorization
 - Role-based access control
 
-### Templates
+### Views
 - Render dynamic HTML content
 - Implement Semantic UI components
 - Handle user interface presentation
@@ -267,10 +267,14 @@ The base template (`base.html`) includes:
    - Recent verified disaster reports
    - Available emergency shelters
    - Call-to-action for different user types
-  
+   - Login/Register
+   ![image](https://github.com/user-attachments/assets/5f270202-9b3c-45ad-be20-d954fe11fcac)
+
+   ![image](https://github.com/user-attachments/assets/ebd23319-0917-4f71-bfd9-044e14fcc5f6)
 
 
-1. **Disaster Reports** (`disaster_reports.html`)
+
+2. **Disaster Reports** (`disaster_reports.html`)
    - Advanced filter form with multiple criteria
   
   ![image](https://github.com/user-attachments/assets/1d717f27-dae3-4b5b-b5f2-bc62144e3728)
@@ -282,7 +286,7 @@ The base template (`base.html`) includes:
    - Color-coded severity labels
    - Verification status indicators
 
-2. **Shelters** (`shelters.html`)
+3. **Shelters** (`shelters.html`)
 
    ![image](https://github.com/user-attachments/assets/fe5686c8-7e38-4ee9-871f-9703844f3155)
 
@@ -612,49 +616,6 @@ graph LR
 - Python 3.8 or higher
 - pip package manager
 - Virtual environment tool
-- Git for version control
-
-### Setup Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone [repository-url]
-   cd DRIS_Project
-   ```
-
-2. **Use virtual environment**
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate 
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run migrations**
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   ```
-
-5. **Create superuser**
-   ```bash
-   python manage.py createsuperuser
-   # Follow prompts to create admin account
-   ```
-
-6. **Run development server**
-   ```bash
-   python manage.py runserver
-   # Access at http://localhost:8000
-   ```
-
-7. **Access points**
-   - Main site: http://localhost:8000
-   - Admin panel: http://localhost:8000/admin
-   - API endpoints: Not implemented (future enhancement)
 
 ## User Roles and Permissions
 
