@@ -267,7 +267,6 @@ The base template (`base.html`) includes:
   ![image](https://github.com/user-attachments/assets/1d717f27-dae3-4b5b-b5f2-bc62144e3728)
   ![image](https://github.com/user-attachments/assets/9813e182-1969-4ba9-b4b4-75c0f3204fdf)
   
-  ![image](https://github.com/user-attachments/assets/0e5abf58-0484-4fa2-9443-8f843cd08286)
 
    - Icon-based disaster type visualization
    - Color-coded severity labels
@@ -284,19 +283,30 @@ The base template (`base.html`) includes:
    - Card-based layout for visual appeal
    - Real-time availability display
    
-   ![image](https://github.com/user-attachments/assets/bb50f7fd-807e-4192-a715-48c20ed1a209)
+   ![127 0 0 1_8000_shelters_](https://github.com/user-attachments/assets/54779b6b-51c6-47bd-8f02-98943c5f5d5a)
+  
 
    - Quick contact and directions buttons
 
 4. **Aid Requests** (`aid_requests.html`)
 
+   **Volunteer View**
+   Can see aids assigned to this volunteer.
+   
    ![image](https://github.com/user-attachments/assets/a30594a1-c76b-4179-9e5b-d2413a43a92e)
 
    ![image](https://github.com/user-attachments/assets/8bec9c0d-d63b-44a9-a426-013194717319)
 
    ![image](https://github.com/user-attachments/assets/3145011b-e07c-4771-85d1-0bc82720652f)
 
+   ![127 0 0 1_8000_aid-requests_9_](https://github.com/user-attachments/assets/22156b78-0b95-46a4-9ab8-fd00c063e016)
 
+   **Normal User**
+   Can see aids under this user account.
+   
+   ![image](https://github.com/user-attachments/assets/cc7edbb6-e131-4dbc-9b59-b6db1e9e55a3)
+
+  
    - Role-based view filtering
    - Table layout for efficient data display
    - Status tracking with color codes
