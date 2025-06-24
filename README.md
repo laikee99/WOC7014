@@ -345,7 +345,7 @@ The base template (`base.html`) includes:
    - Assignment history tracking
 
 UI Flow
-```mermain
+```mermaid
 flowchart TB
     subgraph "Landing Page UI"
         L1[Emergency Hotline Banner]
