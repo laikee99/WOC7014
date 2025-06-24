@@ -5,7 +5,7 @@
 **Framework:** Django Web Framework  
 **UI Framework:** Semantic UI CSS  
 **Database:** SQLite  
-**Architecture:** Model-View-Template (MVT)  
+**Architecture:** MVC  
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
