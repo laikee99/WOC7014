@@ -304,40 +304,89 @@ Home Page → Login/Register → Role-based Dashboard
 - **Main Actions**: Monitor all activities, assign volunteers, manage system
 - **Access Points**: Dashboard → Pending requests → Volunteer assignment
 
-## UI Flow Diagrams
+## Navigation Diagram
 
 ```mermaid
-flowchart TB
-    subgraph "Landing Page UI"
-        L1[Emergency Hotline Banner]
-        L2[Navigation Menu]
-        L3[Hero Section]
-        L4[Recent Disasters]
-        L5[Available Shelters]
-        L6[Call to Action]
-    end
+graph TD
+    A[Home Page] --> B{User Logged In?}
+    B -->|No| C[Public View]
+    B -->|Yes| D[Check User Role]
     
-    subgraph "Disaster Report UI"
-        D1[Filter Form]
-        D2[Report List]
-        D3[Report Card]
-        D4[Status Labels]
-        D5[Create Report Button]
-    end
+    C --> E[View Disasters]
+    C --> F[View Shelters]
+    C --> G[Login/Register]
     
-    subgraph "Aid Request UI"
-        A1[Request Form]
-        A2[Request Table]
-        A3[Status Tracking]
-        A4[Assignment Info]
-    end
+    D --> H{Role Type}
+    H -->|Citizen| I[Citizen Dashboard]
+    H -->|Volunteer| J[Volunteer Dashboard]
+    H -->|Authority| K[Authority Dashboard]
     
-    L3 --> D1
-    L3 --> A1
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style I fill:#9f9,stroke:#333,stroke-width:2px
+    style J fill:#ff9,stroke:#333,stroke-width:2px
+    style K fill:#f99,stroke:#333,stroke-width:2px
+```
+
+```mermaid
+graph LR
+    A[Citizen Functions] --> B[Report Disaster]
+    A --> C[Request Aid]
+    A --> D[View My Reports]
+    A --> E[View My Requests]
     
-    style L1 fill:#f66,stroke:#333,stroke-width:2px
-    style D1 fill:#6cf,stroke:#333,stroke-width:2px
-    style A1 fill:#fc6,stroke:#333,stroke-width:2px
+    B --> B1[Fill Form]
+    B1 --> B2[Submit Report]
+    B2 --> B3[View Status]
+    
+    C --> C1[Select Aid Type]
+    C1 --> C2[Provide Details]
+    C2 --> C3[Submit Request]
+    C3 --> C4[Track Status]
+    
+    style A fill:#9f9,stroke:#333,stroke-width:2px
+```
+
+
+```mermaid
+
+graph LR
+    A[Volunteer Functions] --> B[Update Profile]
+    A --> C[Set Availability]
+    A --> D[View Assignments]
+    A --> E[Update Task Status]
+    
+    B --> B1[Add Skills]
+    B1 --> B2[Save Profile]
+    
+    C --> C1[Toggle Available]
+    C1 --> C2[Update Status]
+    
+    D --> D1[View Details]
+    D1 --> D2[Accept/Reject]
+    
+    style A fill:#ff9,stroke:#333,stroke-width:2px
+
+```
+
+
+```mermaid
+
+graph LR
+    A[Authority Functions] --> B[Volunteer Management]
+    A --> C[Aid Request Management]
+    A --> D[System Monitoring]
+    A --> E[User Management]
+    
+    B --> B1[View Available Volunteers]
+    B1 --> B2[Assign to Requests]
+    B2 --> B3[Monitor Progress]
+    
+    C --> C1[View Pending Requests]
+    C1 --> C2[Assign Volunteers]
+    C2 --> C3[Update Status]
+    
+    style A fill:#f99,stroke:#333,stroke-width:2px
+
 ```
 
 ### Landing Page Structure
